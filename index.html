@@ -7,7 +7,7 @@
   <meta name="keywords" content="">
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
-  <title>Amaze UI Examples</title>
+  <title>程序员导航---小张的技术导航网站</title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -45,14 +45,41 @@
   href="http://browsehappy.com/" target="_blank">升级浏览器</a>
   以获得更好的体验！</p>
 <![endif]-->
+<!--导航标题开始-->
+<header class="am-topbar am-topbar-inverse">
+  <h1 class="am-topbar-brand">
+    <a href="#">技术联盟<small>-导航网站</small></a>
+  </h1>
 
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+          data-am-collapse="{target: '#doc-topbar-collapse'}">
+          <span class="am-sr-only">导航切换</span>
+          <span class="am-icon-bars"></span>
+  </button>
+
+  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+    <ul class="am-nav am-nav-pills am-topbar-nav">
+      <li class="am-active"><a href="#">首页</a></li>
+      <li><a href="#">软件开发</a></li>
+      <li><a href="#">软件测试</a></li>
+      <li><a href="#">运维</a></li>
+      <li><a href="#">设计</a></li>
+      <li><a href="#">开发工具/服务</a></li>
+      <li><a href="#">图书推荐</a></li>
+      <li><a href="#">关于</a></li>
+    </ul>
+    <div class="am-topbar-right">
+    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm am-disabled">程序员导航<small>-小张的技术导航网站</small></button>
+    </div>
+  </div>
+
+</header>
+<!--导航标题结束-->
 <!-- 页面内容 开发时删除 -->
 <div class="am-g am-g-fixed am-margin-top">
   <div class="am-u-sm-12">
-    <h1>你好世界！小可 Amaze UI 模板。</h1>
-
-    <p>这是一个基础的页面，引入 Amaze UI 的 css 、js
-      文件。如果你已经熟读文档，使用时删除内容开始开发即可。建议使用前先阅读文档，以提高开发效率。</p>
+    <h1>你好!欢迎使用程序员导航<small>-小张的技术导航网站</small></h1>
+    <p></p>
   </div>
 </div>
 <div class="am-g am-g-fixed am-margin-top">
@@ -146,21 +173,21 @@
       </div>
     </div>
     <hr/>
-    <h2>Web 组件示例</h2>
-    <ul>
-      <li><a href="widget.basic.html">widget.basic.html</a> 使用了 <a
-        href="http://amazeui.org/widgets">Web 组件</a> 的 HTML 结构和样式，但没用使用模板在前端渲染数据，供通过后端渲染数据的用户参考。</li>
-      <li><a href="widget.html">widget.html</a> 是 Web 组件的展示，更多细节查看：<a
-        href="http://amazeui.org/widgets">Web 组件</a></li>
-    </ul>
-    <h3>开始创建你的网页吧。</h3>
+    <h2>联系作者</h2>
+    <div class="am-btn-group">
+      <a href="https://github.com/zdl411437734" target="_blank" class="am-btn am-btn-secondary am-btn-sm"><i class="am-icon-github am-icon-sm"></i> Github</a>
+      <a href="http://www.weibo.com/u/1825478464" target="_blank" class="am-btn am-btn-success am-btn-sm"><i class="am-icon-weibo am-icon-sm"></i> 新浪微博</a>
+      <a href="http://www.etongwl.com" target="_blank" class="am-btn am-btn-primary am-btn-sm"><i class="am-icon-wordpress am-icon-sm"></i>  Blog</a>
+      <a href="http://www.jianshu.com/u/e630681e7001" target="_blank" class="am-btn am-btn-primary am-btn-sm"><i class="am-icon-barcode am-icon-sm"></i>  简书</a>
+    </div>
+    <h3></h3>
   </div>
 </div>
 
 <footer class="am-margin-top">
   <hr/>
   <p class="am-text-center">
-    <small>by The AmazeUI Team.</small>
+    <small>@2017 by 小张</small>
   </p>
 </footer>
 <!-- 以上页面内容 开发时删除 -->
