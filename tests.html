@@ -64,10 +64,10 @@
     <ul class="am-nav am-nav-pills am-topbar-nav">
       <li><a href="index.html">首页</a></li>
       <li><a href="devs.html">软件开发</a></li>
-      <li><a href="tests.html">软件测试</a></li>
-      <li><a href="apps.html">App</a></li>
+      <li class="am-active"><a href="#">软件测试</a></li>
+      <li><a href="apps.html">APP</a></li>
       <li><a href="designtools.html">设计</a></li>
-      <li class="am-active"><a href="#">开发工具/服务</a></li>
+      <li><a href="devtools.html">开发工具/服务</a></li>
       <li><a href="books.html">图书推荐</a></li>
       <li><a href="about.html">关于</a></li>
     </ul>
@@ -88,118 +88,120 @@
 
 <div class="am-g am-g-fixed ">
   <div class="am-panel-group">
-    <section class="am-panel am-panel-default am-margin-top">
-      <div class="am-panel-hd">开发工具</div>
-      <div class="am-panel-bd">
-        <ul class="am-avg-sm-3 am-avg-lg-6 blog-team">
-          <li><a href="https://www.pgyer.com" target="_blank"><img class="am-thumbnail"
-                      src="file/imgs/pgyer.jpg" alt=""/><p class="am-text-center">蒲公英-内测分发</p></a>
-          </li>
-          <li ><a href="https://fir.im/" target="_blank"><img class="am-thumbnail"
-                                          src="file/imgs/firim.jpg" alt=""/><p class="am-text-center">Fir.im-分发</p></a>
-          </li>
-        </ul>
-      </div>
+   <!--精品推荐-->
+    <section class="am-panel am-panel-default">
+      <div class="am-panel-hd">精品推荐</div>
+      <ul class="am-list blog-list">
+        <li><a href="https://segmentfault.com/" target="_blank">Segmentfault 程序员问答社区(国内)</a></li>
+        <li><a href="http://stackoverflow.com/" target="_blank">Stackoverflow 程序员问答社区</a></li>
+        <li><a href="https://github.com/" target="_blank">Github</a></li>
+        <li><a href="https://coding.net/" target="_blank">Coding.NET</a></li>
+        <li><a href="http://git.oschina.net/" target="_blank">GitOSChina</a></li>
+        <li><a href="https://www.dingtalk.com" target="_blank">钉钉</a></li>
+        <li><a href="https://tower.im/">Tower.im</a></li>
+        <li><a href="http://naotu.baidu.com/">百度脑图</a></li>
+        <li><a href="http://json.cn/" target="_blank">在线JSON格式化</a></li>
+      </ul>
     </section>
-    <section class="am-panel am-panel-default am-margin-top">
-      <div class="am-panel-hd">视频学习</div>
+
+    <!--热门平台-->
+    <section class="am-panel am-panel-default">
+      <div class="am-panel-hd">热门平台</div>
       <div class="am-panel-bd">
-        <ul class="am-avg-sm-3 am-avg-lg-6 blog-team">
-          <li><a href="http://www.jikexueyuan.com/" target="_blank">
-            <img class="am-thumbnail"
-                 src="file/imgs/jikexueyuan.jpg" alt=""/>
-            <p class="am-text-center">极客学院</p></a>
-          </li>
-          <li ><a href="http://www.imooc.com/" target="_blank">
-            <img class="am-thumbnail"
-                 src="file/imgs/mukewang.jpg" alt=""/>
-            <p class="am-text-center">慕课网</p></a>
-          </li>
-          <li><a href="https://ke.qq.com/" target="_blank">
-            <img class="am-thumbnail"
-                 src="file/imgs/tengxunketang.jpg" alt=""/>
-            <p class="am-text-center">腾讯课堂</p></a>
-          </li>
-          <li ><a href="http://www.chuanke.com/" target="_blank">
-            <img class="am-thumbnail"
-                 src="file/imgs/baiduchuanke.jpg" alt=""/>
-            <p class="am-text-center">百度传课</p></a>
-          </li>
-          <li ><a href="http://edu.51cto.com/" target="_blank">
-            <img class="am-thumbnail"
-                 src="file/imgs/51ctoxueyuan.jpg" alt=""/>
-            <p class="am-text-center">51CTO学院</p></a>
-          </li>
-          <li ><a href="https://open.163.com/" target="_blank">
-            <img class="am-thumbnail"
-                 src="file/imgs/wangyigongkaike.jpg" alt=""/>
-            <p class="am-text-center">网易公开课</p></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="am-panel am-panel-default am-margin-top">
-      <div class="am-panel-hd">开发平台</div>
-      <div class="am-panel-bd">
-        <ul class="am-avg-sm-2 am-avg-md-4 am-avg-lg-6 am-margin gallery-list">
+        <ul class="am-avg-sm-4 blog-team">
           <li>
             <a href="http://developer.baidu.com/" target="_blank"><img class="am-thumbnail"
-                                                                       src="file/imgs/devbaidu.jpg" alt=""/>
+                   src="file/imgs/devbaidu.jpg" alt=""/>
               <p class="am-text-center">百度开发者中心</p>
             </a>
           </li>
           <li>
-            <a href="https://www.aliyun.com/" target="_blank">
-              <img class="am-thumbnail am-img-bdrs"
-                   src="file/imgs/aliyun.jpeg" alt=""/>
-              <div class="gallery-title">阿里云</div>
-              <div class="gallery-desc">API、开放SDK</div>
+            <a href="https://www.aliyun.com/" target="_blank"><img class="am-thumbnail"
+                                            src="file/imgs/aliyun.jpeg" alt=""/>
+              <p class="am-text-center">阿里云</p>
             </a>
           </li>
           <li>
             <a href="https://www.qcloud.com/" target="_blank">
-              <img class="am-thumbnail am-img-bdrs"
-                   src="file/imgs/tengxunyun.jpg" alt=""/>
-              <div class="gallery-title">腾讯云</div>
-              <div class="gallery-desc">API、开放SDK</div>
+              <img class="am-thumbnail"
+                          src="file/imgs/tengxunyun.jpg" alt=""/>
+              <p class="am-text-center">腾讯云</p>
             </a>
           </li>
           <li>
-            <a href="https://www.juhe.cn/" target="_blank">
-              <img class="am-thumbnail am-img-bdrs"
-                   src="file/imgs/juhe.jpg" alt=""/>
-              <div class="gallery-title">聚合数据</div>
-              <div class="gallery-desc">API</div>
+            <a href="https://www.juhe.cn/" target="_blank"><img class="am-thumbnail"
+                    src="file/imgs/juhe.jpg" alt=""/>
+              <p class="am-text-center">聚合数据</p>
             </a>
           </li>
         </ul>
       </div>
     </section>
+  </div>
+</div>
+
+<!--推荐项目-->
+<div class="am-g am-g-fixed am-margin-top">
+  <p class="am-u-sm-12" style="font-size: 2rem;font-style: oblique;">推荐项目</p>
+  <div class="am-u-sm-12">
+    <div class="am-g">
+      <div class="am-u-sm-12 am-u-md-3">
+        <a href="http://facebook.github.io/react-native/" target="_blank"><img class="am-img-thumbnail"
+                                  src="file/imgs/reactnative.png"
+                                  alt="ReactNative"/></a>
+      </div>
+      <div class="am-u-sm-12 am-u-md-9">
+        <h3>ReactNative</h3>
+
+        <p>
+          接口部分：<a class="am-badge am-badge-success" href="http://facebook.github.io/react-native/" target="_blank">官网</a> <a
+          class="am-badge am-badge-success" href="http://facebook.github.io/react-native/docs/getting-started.html" target="_blank">Doc文档</a> <a
+          class="am-badge am-badge-success" href="http://facebook.github.io/react-native/docs/tutorial.html" target="_blank">学习指南</a> <br/>
+          教程部分：<a class="am-badge am-badge-primary" target="_blank" href="https://reactnative.cn/">ReactNative 中文社区</a>
+        </p>
+      </div>
+    </div>
+    <div class="am-g am-margin-top">
+      <div class="am-u-sm-12 am-u-md-3">
+        <a href="https://weex-project.io/" target="_blank"><img class="am-img-thumbnail"
+                                                               src="file/imgs/weex.png"
+                                                               alt="ReactNative"/></a>
+      </div>
+      <div class="am-u-sm-12 am-u-md-9">
+        <h3>Weex</h3>
+
+        <p>
+          接口部分：<a class="am-badge am-badge-success" href="https://weex-project.io/" target="_blank">官网</a> <a
+                class="am-badge am-badge-success" href="https://weex-project.io/references/" target="_blank">Doc文档</a> <a
+                class="am-badge am-badge-success" href="https://github.com/alibaba/weex" target="_blank">Github开源项目</a> <br/>
+          教程部分：<a class="am-badge am-badge-primary" target="_blank" href="https://github.com/weexteam/article/wiki/Weex%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3">中文文档</a>
+                  <a class="am-badge am-badge-primary" target="_blank" href="https://weex-project.io/guide/">Guide</a>
+        </p>
+      </div>
+    </div>
+    <div class="am-g am-margin-top">
+      <div class="am-u-sm-12 am-u-md-3">
+        <a href="http://cn.vuejs.org" target="_blank"><img class="am-img-thumbnail"
+                                           src="file/imgs/vuejs.jpg"
+                                           alt="VueJs"/></a>
+      </div>
+      <div class="am-u-sm-12 am-u-md-9">
+        <h3>VueJs</h3>
+
+        <p>
+          接口部分：<a class="am-badge am-badge-success" href="http://cn.vuejs.org/v2/api/" target="_blank">API</a> <br/>
+          教程部分：<a class="am-badge am-badge-primary"
+                  href="http://cn.vuejs.org/v2/guide/" target="_blank">教程</a>
+          <a class="am-badge am-badge-primary"
+             href="http://cn.vuejs.org/v2/examples/" target="_blank">示例</a>
+        </p>
+      </div>
+    </div>
+    <!--图书推荐-->
     <section class="am-panel am-panel-default am-margin-top">
-      <div class="am-panel-hd">🔥图书</div>
+      <div class="am-panel-hd">新书推荐</div>
       <div class="am-panel-bd">
         <ul class="am-avg-sm-3 am-avg-lg-6 blog-team">
-          <li >
-            <a href="https://s.click.taobao.com/liW7v7x" target="_blank">
-              <img class="am-thumbnail"
-                   src="https://img.alicdn.com/bao/uploaded/i3/TB13V2nPXXXXXc4XXXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
-              <p class="am-text-center">小程序，巧应用 微信小程序开发实战</p>
-            </a>
-          </li>
-          <li>
-            <a href="https://s.click.taobao.com/r1Z9v7x" target="_blank">
-              <img class="am-thumbnail"
-                   src="https://img.alicdn.com/bao/uploaded/i2/TB1i1BAKFXXXXcKaXXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
-            </a>
-            <p class="am-text-center"><a href="https://s.click.taobao.com/r1Z9v7x">ReactNative跨平台移动应用开发</a><br/><a href="https://s.click.taobao.com/T1X9v7x" target="_blank">领券链接</a></p>
-          </li>
-          <li >
-            <a href="https://s.click.taobao.com/sWs7v7x" target="_blank">
-              <img class="am-thumbnail"
-                   src="https://img.alicdn.com/bao/uploaded/i1/TB1kHjRMVXXXXX8XVXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
-              <p class="am-text-center">ReactNative开发指南</p>
-            </a>
-          </li>
           <li >
             <a href="https://s.click.taobao.com/xTZ6v7x" target="_blank">
               <img class="am-thumbnail"
@@ -207,14 +209,7 @@
               <p class="am-text-center">Jenkins权威指南</p>
             </a>
           </li>
-        </ul>
-      </div>
-    </section>
 
-    <section class="am-panel am-panel-default am-margin-top">
-      <div class="am-panel-hd">推荐图书</div>
-      <div class="am-panel-bd">
-        <ul class="am-avg-sm-3 am-avg-lg-6 blog-team">
           <li>
             <a href="https://s.click.taobao.com/r1Z9v7x" target="_blank">
               <img class="am-thumbnail"
@@ -236,10 +231,22 @@
               <p class="am-text-center">小程序，巧应用 微信小程序开发实战</p>
             </a>
           </li>
+          <li class=""><a href="https://s.click.taobao.com/Lr9Ev7x" target="_blank">
+            <img class="am-thumbnail"
+                 src="https://img.alicdn.com/bao/uploaded/i4/TB1pxLvKpXXXXXoXVXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
+            <p class="am-text-center">qq腾讯网UED体验设计之旅</p>
+          </a>
+          </li>
+          <li class="">
+            <a href="https://s.click.taobao.com/ObBDv7x" target="_blank">
+              <img class="am-thumbnail"
+                   src="https://img.alicdn.com/bao/uploaded/i1/TB1ZJAqOFXXXXcnaFXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
+              <p class="am-text-center">UI设计必修课</p>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
-
     <!--捐助我们-->
     <section class="am-panel am-panel-default am-margin-top">
       <div class="am-panel-hd">捐助本站</div>
@@ -248,10 +255,10 @@
           如果您觉得本站对您有所帮助，您可以扫码赞助本站</small></p>
         <ul class="am-avg-sm-3 am-avg-lg-6 blog-team">
           <li class="am-margin-right"><img class="am-thumbnail"
-                                           src="file/imgs/alipay.png" alt=""/><p class="am-text-center">支付宝捐助</p>
+                   src="file/imgs/alipay400.png" alt=""/><p class="am-text-center">支付宝捐助</p>
           </li>
           <li class="am-margin-left"><img class="am-thumbnail"
-                                          src="file/imgs/weixinpay.jpg" alt=""/><p class="am-text-center">微信捐助</p>
+                   src="file/imgs/weixinpay400.jpg" alt=""/><p class="am-text-center">微信捐助</p>
           </li>
         </ul>
       </div>
@@ -260,9 +267,9 @@
     <h2>联系作者</h2>
     <div class="am-btn-group">
       <a href="https://github.com/zdl411437734" target="_blank" class="am-btn am-btn-secondary am-btn-sm"><i class="am-icon-github am-icon-sm"></i> Github</a>
-      <a href="http://www.weibo.com/u/1825478464" target="_blank" class="am-btn am-btn-success am-btn-sm"><i class="am-icon-weibo am-icon-sm"></i> 新浪微博</a>
-      <a href="http://www.etongwl.com" target="_blank" class="am-btn am-btn-primary am-btn-sm"><i class="am-icon-wordpress am-icon-sm"></i>  Blog</a>
-      <a href="http://www.jianshu.com/u/e630681e7001" target="_blank" class="am-btn am-btn-primary am-btn-sm"><i class="am-icon-barcode am-icon-sm"></i>  简书</a>
+      <a href="http://www.weibo.com/u/1825478464" target="_blank" class="am-btn  am-btn-success am-btn-sm"><i class="am-icon-weibo am-icon-sm"></i> 新浪微博</a>
+      <a href="http://www.etongwl.com" target="_blank" class="am-btn am-btn-primary  am-btn-sm"><i class="am-icon-wordpress am-icon-sm"></i>  Blog</a>
+      <a href="http://www.jianshu.com/u/e630681e7001" target="_blank" class="am-btn  am-btn-primary am-btn-sm"><i class="am-icon-barcode am-icon-sm"></i>  简书</a>
     </div>
   </div>
 </div>

@@ -65,11 +65,11 @@
       <li><a href="index.html">首页</a></li>
       <li><a href="devs.html">软件开发</a></li>
       <li><a href="tests.html">软件测试</a></li>
-      <li><a href="apps.html">App</a></li>
+      <li class="am-active"><a href="#">App</a></li>
       <li><a href="designtools.html">设计</a></li>
       <li><a href="devtools.html">开发工具/服务</a></li>
-      <li><a href="books.html">图书推荐</a></li>
-      <li class="am-active"><a href="#">关于</a></li>
+      <li ><a href="books.html">图书推荐</a></li>
+      <li><a href="about.html">关于</a></li>
     </ul>
     <div class="am-topbar-right">
     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm am-disabled">程序员导航<small>-小张的技术导航网站</small></button>
@@ -82,20 +82,78 @@
 <div class="am-g am-g-fixed am-margin-top">
   <div class="am-u-sm-12">
     <h1>你好!欢迎使用程序员导航<small>-小张的技术导航网站</small></h1>
-    <p></p>
+    <p>程序员需要不断的学习充电,花时间浏览博客,不如买本书,系统学习,再看博客深入学习不是更好😑</p>
   </div>
 </div>
 
 <div class="am-g am-g-fixed ">
   <div class="am-panel-group">
-    <section class="am-panel am-panel-default">
-      <div class="am-panel-hd">关于本站</div>
+    <section class="am-panel am-panel-default am-margin-top">
+      <div class="am-panel-hd">新书推荐</div>
       <div class="am-panel-bd">
-        <p>收集程序员常用服务,为帮助更多的程序员,让程序员的时间真正的花费在学校技术,而不是浏览找服务网站!!!</p>
-        <!--<p>Android开发工程师、Android架构</p>-->
-        <!--<a class="am-btn am-btn-success am-btn-sm" href="#">我的简历 →</a>-->
+        <ul class="am-avg-sm-3 am-avg-lg-6 blog-team">
+          <li >
+            <a href="https://s.click.taobao.com/xTZ6v7x" target="_blank">
+              <img class="am-thumbnail"
+                   src="https://img.alicdn.com/bao/uploaded/i4/TB1bemlNVXXXXcjXXXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
+              <p class="am-text-center">Jenkins权威指南</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://s.click.taobao.com/r1Z9v7x" target="_blank">
+            <img class="am-thumbnail"
+                                           src="https://img.alicdn.com/bao/uploaded/i2/TB1i1BAKFXXXXcKaXXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
+            </a>
+            <p class="am-text-center"><a href="https://s.click.taobao.com/r1Z9v7x">ReactNative跨平台移动应用开发</a><br/><a href="https://s.click.taobao.com/T1X9v7x" target="_blank">领券链接</a></p>
+          </li>
+          <li >
+            <a href="https://s.click.taobao.com/sWs7v7x" target="_blank">
+            <img class="am-thumbnail"
+                                          src="https://img.alicdn.com/bao/uploaded/i1/TB1kHjRMVXXXXX8XVXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
+              <p class="am-text-center">ReactNative开发指南</p>
+            </a>
+          </li>
+          <li >
+            <a href="https://s.click.taobao.com/liW7v7x" target="_blank">
+              <img class="am-thumbnail"
+                   src="https://img.alicdn.com/bao/uploaded/i3/TB13V2nPXXXXXc4XXXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
+              <p class="am-text-center">小程序，巧应用 微信小程序开发实战</p>
+            </a>
+          </li>
+          <li class=""><a href="https://s.click.taobao.com/Lr9Ev7x" target="_blank">
+            <img class="am-thumbnail"
+                 src="https://img.alicdn.com/bao/uploaded/i4/TB1pxLvKpXXXXXoXVXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
+            <p class="am-text-center">qq腾讯网UED体验设计之旅</p>
+          </a>
+          </li>
+          <li class="">
+            <a href="https://s.click.taobao.com/ObBDv7x" target="_blank">
+              <img class="am-thumbnail"
+                   src="https://img.alicdn.com/bao/uploaded/i1/TB1ZJAqOFXXXXcnaFXXXXXXXXXX_!!0-item_pic.jpg_430x430q90.jpg" alt=""/>
+              <p class="am-text-center">UI设计必修课</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
+    <section class="am-panel am-panel-default am-margin-top">
+      <div class="am-panel-hd">APP</div>
+      <div class="am-panel-bd" id="my_use_app">
+        <ul class="am-avg-sm-3 am-avg-lg-6 blog-team" >
+          <!--<li class="">-->
+            <!--<img class="am-thumbnail"-->
+                 <!--src="" alt=""/>-->
+            <!--<p class="am-text-center"></p>-->
+          <!--</li>-->
+          <li v-for="item in lists">
+            <img class="am-thumbnail" :src="item.src" alt=""/>
+            <p class="am-text-center">{{ item.title }}</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!--捐助我们-->
     <section class="am-panel am-panel-default am-margin-top">
       <div class="am-panel-hd">捐助本站</div>
@@ -119,7 +177,6 @@
       <a href="http://www.weibo.com/u/1825478464" target="_blank" class="am-btn am-btn-success am-btn-sm"><i class="am-icon-weibo am-icon-sm"></i> 新浪微博</a>
       <a href="http://www.etongwl.com" target="_blank" class="am-btn am-btn-primary am-btn-sm"><i class="am-icon-wordpress am-icon-sm"></i>  Blog</a>
       <a href="http://www.jianshu.com/u/e630681e7001" target="_blank" class="am-btn am-btn-primary am-btn-sm"><i class="am-icon-barcode am-icon-sm"></i>  简书</a>
-      <!--<a href="#" target="_blank" class="am-btn am-btn-primary am-btn-sm"><i class="am-icon-user am-icon-sm"> 我的简历</i></a>-->
     </div>
   </div>
 </div>
@@ -151,6 +208,30 @@
     document.getElementById("loadingtime").innerHTML = " \t  <font color='#b0c4de' size='1rem'> Load " + secondes + " secondes</font>";
   }
   window.onload = pageloadingtime
+</script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script type="text/javascript">
+  var app4 = new Vue({
+    el: '#my_use_app',
+    data: {
+      lists: [{"src":"http://img.coolsrv.com/i/v01e098c0cddb9948d4.png","title":"天天P图"}]
+    },
+    created: function () {
+      this.fetchData()
+    },
+    methods: {
+      fetchData:function () {
+        var _self = this;
+        $.ajax({
+          type: 'GET',
+          url: 'file/json/app1.json',
+          success:function(data) {
+            _self.lists = data;
+          }
+        });
+      }
+    }
+  })
 </script>
 </body>
 </html>
