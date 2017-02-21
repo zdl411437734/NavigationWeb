@@ -4,6 +4,11 @@
   <script language="JavaScript" type="text/javascript">
     beforeload = (new Date()).getTime();
   </script>
+  <style>
+    [v-cloak]{
+      display: none;
+    }
+  </style>
   <!--[if (gte IE 9)|!(IE)]><!-->
   <script src="assets/js/jquery.min.js"></script>
   <script src="file/js/feedback.js"></script>
@@ -151,7 +156,7 @@
           <!--</li>-->
           <li v-for="item in lists">
             <img class="am-thumbnail am-center" :src="item.src" alt=""/>
-            <p class="am-text-center">{{ item.title }}</p>
+            <p class="am-text-center" v-cloak>{{ item.title }}</p>
           </li>
         </ul>
       </div>
