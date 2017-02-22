@@ -4,6 +4,11 @@
   <script language="JavaScript" type="text/javascript">
     beforeload = (new Date()).getTime();
   </script>
+  <style>
+    [v-cloak]{
+      display: none;
+    }
+  </style>
   <script src="file/js/feedback.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -240,6 +245,29 @@
         </p>
       </div>
     </div>
+
+    <!--前端框架-->
+    <section class="am-panel am-panel-default am-margin-top">
+      <div class="am-panel-hd">前端框架</div>
+      <div class="am-panel-bd" id="my_use_UI">
+        <ul class="am-avg-sm-3 am-avg-lg-6 blog-team" >
+          <!--<li class="">-->
+          <!--<img class="am-thumbnail"-->
+          <!--src="" alt=""/>-->
+          <!--<p class="am-text-center"></p>-->
+          <!--</li>-->
+          <li v-for="item in lists">
+            <a :href="item.url" target="_blank">
+              <p class="am-text-center" v-cloak>{{ item.name }}</p>
+            </a>
+            <a :href="item.github" target="_blank">
+              <p class="am-text-center am-text-break" v-cloak>Github:{{ item.github }}</p>
+            </a>
+
+          </li>
+        </ul>
+      </div>
+    </section>
     <!--图书推荐-->
     <section class="am-panel am-panel-default am-margin-top">
       <div class="am-panel-hd">新书推荐</div>
@@ -336,6 +364,30 @@
 <script src="assets/js/jquery.min.js"></script>
 <!--<![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script type="text/javascript">
+  var app4 = new Vue({
+    el: '#my_use_UI',
+    data: {
+      lists: []
+    },
+    created: function () {
+      this.fetchData()
+    },
+    methods: {
+      fetchData:function () {
+        var _self = this;
+        $.ajax({
+          type: 'GET',
+          url: 'file/json/devs.json',
+          success:function(data) {
+            _self.lists = data.qd;
+          }
+        });
+      }
+    }
+  })
+</script>
 <script type="text/javascript">
   function pageloadingtime() {
     afterload = (new Date()).getTime();
