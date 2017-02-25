@@ -10,6 +10,22 @@
     {"url":"http://www.semantic-ui.cn/","name":"Semantic UI","github":"https://github.com/semantic-org/semantic-ui/"},
     {"url":"http://foundation.zurb.com/","name":"Foundation","github":"https://github.com/zurb/foundation-sites"},
     {"url":"http://www.getuikit.com/","name":"UiKit","github":"https://github.com/uikit/uikit"},
-    {"url":"http://purecss.io/","name":"Pure","github":"https://github.com/yahoo/pure/"}
+    {"url":"http://purecss.io/","name":"Pure","github":"https://github.com/yahoo/pure/"},
+    {"url":"https://facebook.github.io/react/","name":"React","github":"https://github.com/facebook/react"},
+    {"url":"https://angularjs.org/","name":"Angular","github":"https://github.com/angular/angular.js"},
+    {"url":"http://cn.vuejs.org/","name":"Vue","github":"https://github.com/vuejs/vue"},
+    {"url":"http://semantic-ui.com/","name":"Semantic UI","github":"https://github.com/Semantic-Org/Semantic-UI"},
+    {"url":"http://ionicframework.com/getting-started/","name":"Ionic","github":"https://github.com/driftyco/ionic"},
+    {"url":"http://backbonejs.org/","name":"Backbone","github":"https://github.com/jashkenas/backbone"},
+    {"url":"http://emberjs.com/","name":"Ember","github":"https://github.com/emberjs/ember.js"},
+    {"url":"http://echarts.baidu.com/","name":"Echarts","github":"https://github.com/ecomfe/echarts"},
+    {"url":"https://weex-project.io/","name":"Weex","github":"https://github.com/alibaba/weex"},
+    {"url":"https://ant.design/","name":"Ant Design","github":"https://github.com/ant-design/ant-design"},
+    {"url":"http://knockoutjs.com/","name":"Knockout","github":"https://github.com/knockout/knockout"},
+    {"url":"http://element.eleme.io/","name":"Element","github":"https://github.com/ElemeFE/element"},
+    {"url":"http://avalonjs.coding.me/","name":"avalon","github":"https://github.com/RubyLouvre/avalon"},
+    {"url":"https://svelte.technology/","name":"svelte","github":"https://github.com/sveltejs/svelte"},
+    {"url":"http://zui.sexy/","name":"ZUI","github":"https://github.com/easysoft/zui"},
+    {"url":"https://dojotoolkit.org/","name":"Dojo","github":"https://github.com/dojo/dojo"}
   ]
 }
