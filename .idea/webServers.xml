@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6e5db759-d2d3-4f2f-bd3c-494d09dfe0ad" name="47.52.235.27" url="http://47.52.235.27/dh">
+        <fileTransfer host="47.52.235.27" port="22" rootFolder="/opt/nginx/html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
