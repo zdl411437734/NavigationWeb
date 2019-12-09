@@ -113,6 +113,10 @@ function search_click(engine){
             	search('https://s.geekbang.org/search/c=0/k=' + v + '/t=')
             } else if (engine === 'google-image') {
             	search('https://www.googlebridge.com/search?q=' + v )
+            }else if (engine === '360') {
+                search('https://www.so.com/s?searchEngine=haosouWeb&q=' + v )
+            }else if (engine === 'sogou') {
+                search('https://www.sogou.com/web?searchEngine=sougouWeb&query='+v)
             }
         }
     }
