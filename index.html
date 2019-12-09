@@ -5,6 +5,8 @@
     beforeload = (new Date()).getTime();
   </script>
   <script src="file/js/feedback.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+  <script src="./dev/js/function.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
@@ -42,6 +44,7 @@
 
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="./dev/css/style.css">
 </head>
 <body>
 <!--[if lte IE 9]>
@@ -89,6 +92,50 @@
 
 <div class="am-g am-g-fixed ">
   <div class="am-panel-group">
+    <section class="am-panel am-panel-default">
+      <div class="am-panel-hd">搜索</div>
+      <div class="am-panel-bd">
+        <!-- 搜索 -->
+        <div class="box" id="banner">
+
+          <div style="display: flex; justify-content: center; align-items: center;margin-bottom: 10px;">
+            <img src="./dev/img/banner.svg" width="90%" height="auto">
+          </div>
+        </div>
+        <div class="box" style="overflow: visible;">
+          <a href="#" name="search"></a>
+          <div style="display: flex; justify-content: center;align-items: center; padding-top: 20px" >
+            <div style="display: flex;width: 100%; justify-content: center;">
+              <div style="width: 50%;position: relative;">
+                <input id="searchText" type="text"  placeholder="泉龙提醒您：请输入搜索内容" oninput ="autoFillSearch()" onblur="searchTextOnblur()"
+                       style="border: 1px solid rgba(34,36,38,.15); outline: 0; border-radius: 30px; width: 100%; height: 40px; background-color: #F3F6F8; padding-left: 15px; padding-right: 15px; "/>
+                <div id="autoFillInput" style="width: 100%; position: absolute; z-index: 99999; background: #fff; overflow: auto;">
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div style="display: flex; justify-content: center;align-items: center; padding-top: 10px" >
+            <div style="display: flex;width: 100%; justify-content: center;">
+              <div style="justify-content: center;">
+                <input type="button" class="search_btn" value="百度" onclick="search_click('baidu')" />
+                <input type="button" class="search_btn" value="谷歌" onclick="search_click('google')" />
+                <input type="button" class="search_btn" value="谷歌镜像" onclick="search_click('google-image')" />
+                <input type="button" class="search_btn" value="stackoverflow" onclick="search_click('stackoverflow')" />
+                <input type="button" class="search_btn" value="github" onclick="search_click('github')" />
+                <input type="button" class="search_btn" value="必应" onclick="search_click('bing')" />
+                <input type="button" class="search_btn" value="极客" onclick="search_click('geek')" />
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
     <section class="am-panel am-panel-default">
       <div class="am-panel-hd">联系站长</div>
       <div class="am-panel-bd">
@@ -240,8 +287,8 @@
   <hr/>
   <p class="am-text-center">
     <!--统计-->
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261244090'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1261244090%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
     <small>©2017 Copyright  by 小张</small><span id="loadingtime"></span>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278275562'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s9.cnzz.com/stat.php%3Fid%3D1278275562%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
   </p>
 </footer>
 <!-- 以上页面内容 开发时删除 -->
