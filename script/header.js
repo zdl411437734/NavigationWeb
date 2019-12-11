@@ -1,0 +1,26 @@
+// 公共标题
+document.writeln(" <h1 class=\'am-topbar-brand\'>");
+document.writeln("    <a href=\'#\'>技术联盟<small>-导航网站</small></a>");
+document.writeln("  </h1>");
+document.writeln("");
+document.writeln("  <button class=\'am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only\'");
+document.writeln("          data-am-collapse=\'{target: \'#doc-topbar-collapse\'}\'>");
+document.writeln("          <span class=\'am-sr-only\'>导航切换</span>");
+document.writeln("          <span class=\'am-icon-bars\'></span>");
+document.writeln("  </button>");
+document.writeln("");
+document.writeln("  <div class=\'am-collapse am-topbar-collapse\' id=\'doc-topbar-collapse\'>");
+document.writeln("    <ul class=\'am-nav am-nav-pills am-topbar-nav\'>");
+document.writeln("      <li class=\'am-active\'><a href=\'#\'>首页</a></li>");
+document.writeln("      <li><a href=\'devs.html\'>软件开发</a></li>");
+document.writeln("      <li><a href=\'tests.html\'>软件测试</a></li>");
+document.writeln("      <li><a href=\'apps.html\'>APP</a></li>");
+document.writeln("      <li><a href=\'designtools.html\'>设计</a></li>");
+document.writeln("      <li><a href=\'devtools.html\'>开发工具/服务</a></li>");
+document.writeln("      <li><a href=\'books.html\'>图书推荐</a></li>");
+document.writeln("      <li><a href=\'about.html\'>关于</a></li>");
+document.writeln("    </ul>");
+document.writeln("    <div class=\'am-topbar-right\'>");
+document.writeln("    <button class=\'am-btn am-btn-primary am-topbar-btn am-btn-sm am-disabled\'>程序员导航<small>-小张的技术导航网站</small></button>");
+document.writeln("    </div>");
+document.writeln("  </div>");
