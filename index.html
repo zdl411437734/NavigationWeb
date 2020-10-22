@@ -146,6 +146,12 @@
         <a class="am-btn am-btn-success am-btn-sm" href="mailto:411437734@qq.com">发邮件 →</a>
       </div>
     </section>
+    <section class="am-panek am-panel-default">
+      <div class="am-panel-hd">IP地址</div>
+      <div class="am-panel-bd">
+        <p id="ip_address_p"></p>
+      </div>
+    </section>
     <section class="am-panel am-panel-default">
       <div class="am-panel-hd">精品推荐</div>
       <ul class="am-list blog-list">
@@ -320,5 +326,34 @@
   }
   window.onload = pageloadingtime
 </script>
+<!--IP地址-->
+<script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script type="text/javascript">
+  function getBrowserInfo()
+  {
+    var agent = navigator.userAgent.toLowerCase();
+    var regStr_ie = /mise[\d.]+;/gi;
+    var regStr_ff = /firefox\/[\d.]+;/gi;
+    var regStr_chrome = /chrome\/[\d.]+;/gi;
+    var regStr_saf = /safari\/[\d.]+;/gi;
+    //IE
+    if (agent.indexOf('msie')>0){
+      return agent.match(regStr_ie);
+    }
+    if (agent.indexOf('firefox')>0){
+      return agent.match(regStr_ff);
+    }
+    if (agent.indexOf('chrome')>0){
+      return agent.match(regStr_chrome);
+    }
+    if (agent.indexOf('safari')>0&&agent.indexOf('chrome')<0){
+      return agent.match(regStr_saf);
+    }
+    return agent;
+  }
+  var p = document.getElementById('ip_address_p');
+  p.innerHTML = "IP地址："+returnnCitySN['cip']+'<br/> CID：'+returnnCitySN['cid']+'<br/>地区：'+returnnCitySN['cname']+'<br/>浏览器：'+getBrowserInfo();
+</script>
+
 </body>
 </html>
